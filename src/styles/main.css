@@ -29,7 +29,7 @@ header {
   background-image: url('../public/images/heros/hero-image_2.jpg');
   background-position: center;
   background-size: cover;
-  padding: 5rem 0;
+  padding: 7rem 0;
   height: 15rem;
   position: relative;
   z-index: 1;
@@ -106,7 +106,7 @@ nav {
 /* HeroElement Styles */
 .hero {
   background-color: #fff;
-  padding: 4rem 0;
+  padding: 2rem 0;
   text-align: center;
   flex: 1;
 }
