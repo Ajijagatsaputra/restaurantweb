@@ -1,4 +1,4 @@
-function displayRestaurants(restaurants) {
+export function displayRestaurants(restaurants) {
   const container = document.getElementById('restaurant-list');
   container.innerHTML = ''; // Clear previous content
   restaurants.forEach(restaurant => {

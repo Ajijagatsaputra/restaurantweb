@@ -3,7 +3,7 @@ import '../styles/main.css';
 import './components/AppBar.js';
 import './components/Footer.js';
 import './components/HeroElement.js';
-import './components/RestoData.js'; 
+import { displayRestaurants } from './components/RestoData.js'; 
 import '../public/data/DATA.json';
 
 document.addEventListener("DOMContentLoaded", async function() {
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     
     if (data && data.restaurants) {
       const restaurantsData = data.restaurants; 
-      console.log(restaurantsData); 
+      displayRestaurants(restaurants)
     } else {
       console.error('Error: Invalid JSON data format'); 
     }
