@@ -9,6 +9,10 @@
 }
 
 /* Global Styles */
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   line-height: 1.6;
@@ -18,13 +22,13 @@ body {
   min-height: 100vh;
 }
 
-header,
-footer {
+/* Header and Footer Styles */
+header, footer {
   background-color: #333;
   color: #fff;
+  text-align: center;
 }
 
-/* AppBar Styles */
 header {
   background-image: url('../public/images/heros/hero-image_2.jpg');
   background-position: center;
@@ -69,7 +73,6 @@ nav {
 .logo img {
   max-width: 100%;
   height: auto;
-  background-size: contain;
 }
 
 .logo-text {
@@ -108,26 +111,102 @@ nav {
   background-color: #fff;
   padding: 2rem 0;
   text-align: center;
-  flex: 1;
 }
 
-.hero-content {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 1rem;
-  position: relative;
+/* Main Content Styles */
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Restaurant List Styles */
+#restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.restaurant-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.restaurant-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-image {
+  width: 100%;
+  height: auto;
+}
+
+.restaurant-content {
+  padding: 15px;
+}
+
+.restaurant-name {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.restaurant-description,
+.restaurant-city,
+.restaurant-rating {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hamburgermenu div {
+  margin: 10px;
 }
 
 /* Footer Styles */
 footer {
   padding: 1.5rem 0;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  text-align: center;
+  margin-top: auto;
+  background-color: #222; /* Latar belakang sedikit lebih gelap */
+  color: #ccc; /* Teks sedikit lebih terang */
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ddd;
 }
 
 /* Responsive Styles */
+@media (max-width: 1200px) {
+  #restaurant-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  #restaurant-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -156,15 +235,18 @@ footer {
     padding: 0.75rem 1.5rem;
   }
 
-  /* CSS untuk hamburger menu */
   .nav-links {
-    display: none; /* Sembunyikan daftar menu pada tampilan mobile */
+    display: none; /* Sembunyikan tautan menu di perangkat kecil */
   }
 
   .hamburger-menu {
-    display: flex; /* Tampilkan hamburger menu */
+    display: flex; /* Tampilkan menu hamburger */
     flex-direction: column;
     cursor: pointer;
+  }
+
+  #restaurant-list {
+    grid-template-columns: 1fr; /* Kolom tunggal di layar kecil */
   }
 }
 

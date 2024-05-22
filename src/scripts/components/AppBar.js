@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="logo-text"></div>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="https://www.linkedin.com/in/aji-jagat-saputra-186b97227/">About</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="https://www.linkedin.com/in/aji-jagat-saputra-186b97227/">About us</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
       </ul>

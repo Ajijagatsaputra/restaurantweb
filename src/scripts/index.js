@@ -4,21 +4,16 @@ import './components/AppBar.js';
 import './components/Footer.js';
 import './components/HeroElement.js';
 import { displayRestaurants } from './components/RestoData.js'; 
-import '../public/data/DATA.json';
+import data from '../public/data/DATA.json';
 
 document.addEventListener("DOMContentLoaded", async function() {
-  const hamburgerMenu = document.querySelector('.hamburger-menu');
-  const navlinks = document.querySelector('.nav-links');
+  const hamburgerMenu = document.querySelector('.hamburgermenu');
+  const navlinks = document.querySelector('.nav__list');
 
   try {
-    // Ambil data JSON menggunakan fetch
-    const response = await fetch('../public/data/DATA.json');
-    const data = await response.json();
-    
-    
+    // Using imported data directly instead of fetch
     if (data && data.restaurants) {
-      const restaurantsData = data.restaurants; 
-      displayRestaurants(restaurants)
+      displayRestaurants(data.restaurants);  // Pass the correct data array
     } else {
       console.error('Error: Invalid JSON data format'); 
     }
