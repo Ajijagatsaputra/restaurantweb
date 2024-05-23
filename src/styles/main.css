@@ -11,6 +11,7 @@
 /* Global Styles */
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -106,6 +107,14 @@ nav {
   color: #333;
 }
 
+.nav__list {
+  display: none; /* Sembunyikan menu secara default */
+}
+
+.nav__list.show {
+  display: block; /* Tampilkan menu ketika .show ditambahkan */
+}
+
 /* HeroElement Styles */
 .hero {
   background-color: #fff;
@@ -175,23 +184,33 @@ footer {
   width: 100%;
   text-align: center;
   margin-top: auto;
-  background-color: #222; /* Latar belakang sedikit lebih gelap */
-  color: #ccc; /* Teks sedikit lebih terang */
+  background-color: #000000; /* Latar belakang sedikit lebih gelap */
+  color: #f1eaea; /* Teks sedikit lebih terang */
   font-size: 1rem;
+  display: flex;
+  justify-content: center; /* Untuk membuat teks di tengah secara horizontal */
+  align-items: center; /* Untuk membuat teks di tengah secara vertikal */
 }
 
 footer p {
   margin: 0.5rem 0;
+  font-size: medium;
+  text-align: center;
 }
 
 footer a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
+  padding: 20px;
 }
 
 footer a:hover {
   color: #ddd;
+}
+
+footer div p {
+  color: #ccc;
 }
 
 /* Responsive Styles */
@@ -264,3 +283,8 @@ footer a:hover {
     padding: 0.5rem 1rem;
   }
 }
+
+a {
+  padding: 20px;
+}
+

@@ -82,7 +82,7 @@ export function displayRestaurants(restaurants) {
     console.error('Restaurant list container not found!');
     return;
   }
-  container.innerHTML = ''; // Clear previous content
+  container.innerHTML = ''; 
 
   restaurants.forEach(restaurant => {
     const restaurantElement = document.createElement('div');
