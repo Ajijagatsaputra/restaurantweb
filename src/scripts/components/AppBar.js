@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
         <li><a href="https://www.linkedin.com/in/aji-jagat-saputra-186b97227/">About us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Favorite</a></li>
       </ul>
     </nav>
   `;

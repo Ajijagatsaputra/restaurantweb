@@ -1,14 +1,13 @@
 import 'regenerator-runtime'; 
 import '../styles/main.css';
 import './components/AppBar.js';
-import './components/Footer.js';
 import './components/HeroElement.js';
 import { displayRestaurants } from './components/RestoData.js'; 
 import data from '../public/data/DATA.json';
 
 document.addEventListener("DOMContentLoaded", async function() {
   const hamburgerMenu = document.querySelector('.hamburgermenu');
-  const navlinks = document.querySelector('.nav__links');
+  const navlinks = document.querySelector('.nav-links');
 
   try {
     // Using imported data directly instead of fetch
