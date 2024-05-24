@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const appBar = document.createElement("header");
   appBar.innerHTML = `
-    <nav>
+    <nav class = "hamburgermenu">
       <div class="logo">
         <div class="logo-text"></div>
       </div>

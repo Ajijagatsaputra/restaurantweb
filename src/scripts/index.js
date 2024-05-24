@@ -8,7 +8,7 @@ import data from '../public/data/DATA.json';
 
 document.addEventListener("DOMContentLoaded", async function() {
   const hamburgerMenu = document.querySelector('.hamburgermenu');
-  const navlinks = document.querySelector('.nav__list');
+  const navlinks = document.querySelector('.nav__links');
 
   try {
     // Using imported data directly instead of fetch

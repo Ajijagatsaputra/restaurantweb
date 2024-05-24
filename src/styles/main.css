@@ -258,7 +258,7 @@ footer div p {
     display: none; /* Sembunyikan tautan menu di perangkat kecil */
   }
 
-  .hamburger-menu {
+  .hamburgermenu {
     display: flex; /* Tampilkan menu hamburger */
     flex-direction: column;
     cursor: pointer;
