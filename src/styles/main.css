@@ -152,12 +152,12 @@ main {
 }
 
 .restaurant-image {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
 .restaurant-content {
-  padding: 15px;
+  padding: 20px;
 }
 
 .restaurant-name {
