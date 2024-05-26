@@ -6,7 +6,7 @@ import { displayRestaurants } from './components/RestoData.js';
 import data from '../public/data/DATA.json';
 
 document.addEventListener("DOMContentLoaded", async function() {
-  const hamburgerMenu = document.querySelector('.hamburgermenu');
+  const hamburgerMenu = document.querySelector('.hamburger');
   const navlinks = document.querySelector('.nav-links');
 
   try {
