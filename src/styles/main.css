@@ -52,6 +52,7 @@ header::before {
   z-index: -1;
 }
 
+/* Navigation Styles */
 nav {
   display: flex;
   justify-content: space-between;
@@ -62,19 +63,10 @@ nav {
 }
 
 .logo {
-  background-image: url('../public/images/heros/lg_pugin.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 200px;
-  height: 80px;
   display: flex;
   align-items: center;
-}
-
-.logo img {
-  max-width: 100%;
-  height: auto;
+  width: 200px;
+  height: 80px;
 }
 
 .logo-text {
@@ -84,11 +76,23 @@ nav {
   margin-left: 10px;
 }
 
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger img {
+  width: 30px;
+  height: 30px;
+}
+
 .nav-links {
   list-style: none;
   font-size: larger;
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .nav-links li {
@@ -108,12 +112,8 @@ nav {
   color: #333;
 }
 
-.nav__list {
-  display: none; /* Sembunyikan menu secara default */
-}
-
 .nav-links.show {
-  display: block; /* Tampilkan menu ketika .show ditambahkan */
+  display: block;
 }
 
 /* HeroElement Styles */
@@ -154,7 +154,7 @@ main {
 }
 
 .restaurant-image {
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -176,22 +176,18 @@ main {
   color: #555;
 }
 
-.hamburgermenu div {
-  margin: 10px;
-}
-
 /* Footer Styles */
 footer {
   padding: 1.5rem 0;
   width: 100%;
   text-align: center;
   margin-top: auto;
-  background-color: #000000; /* Latar belakang sedikit lebih gelap */
-  color: #f1eaea; /* Teks sedikit lebih terang */
+  background-color: #000000;
+  color: #f1eaea;
   font-size: 1rem;
   display: flex;
-  justify-content: center; /* Untuk membuat teks di tengah secara horizontal */
-  align-items: center; /* Untuk membuat teks di tengah secara vertikal */
+  justify-content: center;
+  align-items: center;
 }
 
 footer p {
@@ -204,7 +200,6 @@ footer a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
-  padding: 20px;
 }
 
 footer a:hover {
@@ -239,6 +234,11 @@ footer div p {
     gap: 0.5rem;
     width: 100%;
     text-align: center;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: block;
   }
 
   .nav-links a {
@@ -247,33 +247,19 @@ footer div p {
     padding: 0.5rem;
   }
 
-  header {
-    padding: 3rem 0;
-  }
-
-  .cta-button {
-    font-size: 1.2rem;
-    padding: 0.75rem 1.5rem;
-  }
-
-  .nav-links {
-    display: none; /* Sembunyikan tautan menu di perangkat kecil */
-  }
-
-  .hamburgermenu {
-    display: flex; /* Tampilkan menu hamburger */
-    flex-direction: column;
-    cursor: pointer;
+  .hamburger {
+    display: block;
   }
 
   #restaurant-list {
-    grid-template-columns: 1fr; /* Kolom tunggal di layar kecil */
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 480px) {
-  .logo img {
-    width: 40px;
+  .logo {
+    width: 100px;
+    height: 40px;
   }
 
   .logo-text {
@@ -285,8 +271,3 @@ footer div p {
     padding: 0.5rem 1rem;
   }
 }
-
-a {
-  padding: 20px;
-}
-

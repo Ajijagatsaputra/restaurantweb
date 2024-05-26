@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="logo-text"></div>
     </div>
     <button class="hamburger">
-      <img src="../public/images/heros/burger-bar.png" alt="menu-hamburger">
+      <img src="../images/heros/burger-bar.png" alt="menu-hamburger">
     </button>
     <ul class="nav-links">
       <li><a href="/">Home</a></li>
