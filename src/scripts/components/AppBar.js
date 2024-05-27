@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const appBar = document.createElement("nav");
   appBar.innerHTML = `
     <div class="logo">
-      <div class="logo-text"></div>
+      <div class="logo-text">Resto Plugin</div>
     </div>
     <button class="hamburger">
       <img src="../images/heros/burger-bar.png" alt="menu-hamburger">
@@ -14,4 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
     </ul>
   `;
   document.getElementById("app").appendChild(appBar);
+  const jumbotron = document.createElement("section");
+  jumbotron.innerHTML = `
+  <img src = "../images/heros/hero-image_2.jpg" alt ="hero">
+  `
+  jumbotron.classList.add('hero');
+  document.getElementById("app").appendChild(jumbotron)
 });

@@ -1,30 +1,29 @@
-import 'regenerator-runtime'; 
-import '../styles/main.css';
-import './components/AppBar.js';
-import './components/HeroElement.js';
-import { displayRestaurants } from './components/RestoData.js'; 
-import data from '../public/data/DATA.json';
+import "regenerator-runtime";
+import "../styles/main.css";
+import "./components/AppBar.js";
+import "./components/HeroElement.js";
+import { displayRestaurants } from "./components/RestoData.js";
+import data from "../public/data/DATA.json";
 
-document.addEventListener("DOMContentLoaded", async function() {
-  const hamburgerMenu = document.querySelector('.hamburger');
-  const navlinks = document.querySelector('.nav-links');
+document.addEventListener("DOMContentLoaded", async function () {
+  const hamburgerMenu = document.querySelector(".hamburger");
+  const navlinks = document.querySelector(".nav-links");
 
   try {
-    // Using imported data directly instead of fetch
     if (data && data.restaurants) {
-      displayRestaurants(data.restaurants);  // Pass the correct data array
+      displayRestaurants(data.restaurants);
     } else {
-      console.error('Error: Invalid JSON data format'); 
+      console.error("Error: Invalid JSON data format");
     }
   } catch (error) {
-    console.error('Error fetching JSON data:', error);
+    console.error("Error fetching JSON data:", error);
   }
 
   if (hamburgerMenu && navlinks) {
-    hamburgerMenu.addEventListener('click', function() {
-      navlinks.classList.toggle('show');
+    hamburgerMenu.addEventListener("click", function () {
+      navlinks.classList.toggle("show");
     });
   } else {
-    console.error('Error: Hamburger menu or nav links not found'); 
+    console.error("Error: Hamburger menu or nav links not found");
   }
 });

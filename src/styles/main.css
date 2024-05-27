@@ -31,11 +31,10 @@ header, footer {
 }
 
 header {
-  background-image: url('../public/images/heros/hero-image_2.jpg');
+ 
   border-radius: 10px;
   background-position: center;
   background-size: cover;
-  padding: 7rem 0;
   height: 15rem;
   position: relative;
   z-index: 1;
@@ -54,10 +53,12 @@ header::before {
 
 /* Navigation Styles */
 nav {
+  position: fixed;
+  background-color: rgb(67, 72, 74);
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -118,6 +119,8 @@ nav {
 
 /* HeroElement Styles */
 .hero {
+  width: 100%;
+  height: auto;
   background-color: #ffffff;
   padding: 2rem 0;
   text-align: center;
@@ -126,6 +129,7 @@ nav {
 
 /* Main Content Styles */
 main {
+  margin-top: 300px;
   flex: 1;
   padding: 20px;
   display: flex;
