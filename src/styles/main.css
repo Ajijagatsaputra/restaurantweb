@@ -35,9 +35,8 @@ header {
   border-radius: 10px;
   background-position: center;
   background-size: cover;
-  height: 15rem;
+  height: 115%;
   position: relative;
-  z-index: 1;
 }
 
 header::before {
@@ -53,8 +52,8 @@ header::before {
 
 /* Navigation Styles */
 nav {
-  position: fixed;
-  background-color: rgb(67, 72, 74);
+  position: absolute;
+  background-color: rgb(0, 0, 0);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -78,6 +77,7 @@ nav {
 }
 
 .hamburger {
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
