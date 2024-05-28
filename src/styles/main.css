@@ -35,7 +35,7 @@ header {
   border-radius: 10px;
   background-position: center;
   background-size: cover;
-  height: 115%;
+  height: 90%;
   position: relative;
 }
 
@@ -46,21 +46,26 @@ header::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(3, 3, 3, 0.5);
-  z-index: -1;
+  /* background: rgba(3, 3, 3, 0.5); */
+  /* z-index: -1; */
+ 
 }
 
 /* Navigation Styles */
 nav {
   position: absolute;
-  background-color: rgb(0, 0, 0);
+  background-color: grey;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
+
 
 .logo {
   display: flex;
@@ -120,14 +125,16 @@ nav {
 /* HeroElement Styles */
 .hero {
   background-color: #ffffff;
-  padding: 2rem 0;
+  padding: 10px 0;
   text-align: center;
   color: #000000;
+  
 }
 
 .hero img{
-  width: 100%;
+  min-width: 80%;
   height: auto;
+  padding-top: 85px;
 }
 
 /* Main Content Styles */
@@ -225,6 +232,12 @@ footer div p {
   }
 }
 
+@media screen and (max-width: 1000px){
+  .hero img{
+      width: 100%;
+      height: auto;
+  }
+}
 @media (max-width: 992px) {
   #restaurant-list {
     grid-template-columns: repeat(2, 1fr);
@@ -235,6 +248,10 @@ footer div p {
   nav {
     flex-direction: column;
     align-items: center;
+  }
+  
+  header {
+    height: 30%;
   }
 
   .nav-links {
@@ -257,7 +274,7 @@ footer div p {
 
   .hamburger {
     display: block;
-    margin-right: auto;
+    margin: start;
   }
 
   #restaurant-list {
