@@ -104,6 +104,10 @@ nav {
   gap: 1rem;
 }
 
+.tittle {
+  font-size: x-large;  
+}
+
 .nav-links li {
   margin: 0;
 }
@@ -123,6 +127,20 @@ nav {
 
 .nav-links.show {
   display: block;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+ 
+.skip-link:focus {
+   top: 0;
 }
 
 /* HeroElement Styles */

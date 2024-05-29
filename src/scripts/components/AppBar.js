@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
       <img src="../images/heros/burger-bar.png" alt="menu-hamburger">
     </button>
     <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="https://www.linkedin.com/in/aji-jagat-saputra-186b97227/">About us</a></li>
-      <li><a href="#">Favorite</a></li>
-      <li><a href="#restaurant-list">Services</a></li>
+      <li class = "tittle"><a href="/">Home</a></li>
+      <li class = "tittle"><a href="https://www.linkedin.com/in/aji-jagat-saputra-186b97227/">About us</a></li>
+      <li class = "tittle"><a href="#">Favorite</a></li>
+      <li class = "tittle"><a href="#restaurant-list">Content</a></li>
 
     </ul>
   `;
