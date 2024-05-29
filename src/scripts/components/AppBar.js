@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
       <li><a href="/">Home</a></li>
       <li><a href="https://www.linkedin.com/in/aji-jagat-saputra-186b97227/">About us</a></li>
       <li><a href="#">Favorite</a></li>
+      <li><a href="#restaurant-list">Services</a></li>
+
     </ul>
   `;
   document.getElementById("app").appendChild(appBar);
