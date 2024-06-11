@@ -133,7 +133,6 @@ nav {
   position: absolute;
   top: -40px;
   left: 0;
-  background-color: #bf1722;
   color: white;
   padding: 8px;
   z-index: 100;
@@ -249,7 +248,7 @@ footer div p {
 /* Responsive Styles */
 @media (max-width: 1200px) {
   #restaurant-list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
